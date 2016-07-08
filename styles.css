@@ -1,12 +1,19 @@
 ﻿body
 {
+	font-family: arial;
+	font-weight: 1em;
 }
 .box {
 	background-color: blue;
 	width: 100px;
 	height: 100px;
 }
-
+.container {
+	height: 300px;
+	width: 500px;
+	background-color: orange;
+	z-index: -99;
+}
 .box-relative {
 	position: relative;
 	top: 20px;
@@ -17,7 +24,16 @@
 .box-absolute {
 	position: absolute;
 	top: 30px;
-	left: 100px;
+	left: 400px;
 	background-color: red;
 
 }
+
+.box-fixed {
+	position: fixed;
+	top: 10px;
+	left: 100px;
+	background-color: purple;
+	z-index: 99;
+}
+
